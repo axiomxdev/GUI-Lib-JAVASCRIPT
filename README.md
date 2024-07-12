@@ -3,8 +3,7 @@
 ```js
 (async () => {
     await fetch('https://raw.githubusercontent.com/axiomxdev/GUI-Lib-JAVASCRIPT/main/index.js').then(async (response) => {
-        const scriptText = response.text()
-        eval(scriptText);
+        eval(response.text());
 
         new MyPopup({
             'name': 'GUI Lib JAVASCRIPT',
@@ -26,4 +25,5 @@
         });
     });
 })();
+
 ```
